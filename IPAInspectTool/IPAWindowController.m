@@ -30,6 +30,8 @@
     return path;
 }
 
+#pragma mark - DragDropViewProtocol
+
 - (BOOL)dragDropViewDidAcceptIpaFile:(id <NSDraggingInfo>)sender {
 
     if ([sender draggingSource] == self) {
@@ -68,6 +70,8 @@
     return YES;
 }
 
+#pragma mark - 
+
 - (void)reloadData {
     [self.window setTitle:[self.infoDictionary objectForKey:@"CFBundleDisplayName"]];
 
@@ -90,7 +94,7 @@
     [self.tableView reloadData];
 }
 
-#pragma mark - NStableView
+#pragma mark - NSTableView
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return [[self.infoDictionary allKeys] count];

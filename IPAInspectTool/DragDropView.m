@@ -10,8 +10,7 @@
 
 @implementation DragDropView
 
-- (id)initWithCoder:(NSCoder *)coder
-{
+- (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         [self registerForDraggedTypes:@[@"com.apple.iTunes.ipa", NSFilenamesPboardType]];
@@ -19,8 +18,7 @@
     return self;
 }
 
--(void)drawRect:(NSRect)rect
-{
+-(void)drawRect:(NSRect)rect {
     [super drawRect:rect];
     
     [[NSColor colorWithCalibratedWhite:0.174 alpha:1.000] setFill];
@@ -29,14 +27,16 @@
 
 #pragma mark - NSDraggingDestination
 
-- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
-{
+- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender {
     return NSDragOperationCopy;
 }
 
 - (BOOL)performDragOperation:(id <NSDraggingInfo>)sender {
+    if ([self.delegate respondsToSelector:@selector(dragDropViewDidAcceptIpaFile:)]) {
+        return [self.delegate dragDropViewDidAcceptIpaFile:sender];
+    }
     
-    return [self.delegate dragDropViewDidAcceptIpaFile:sender];
+    return NO;
 }
 
 @end
