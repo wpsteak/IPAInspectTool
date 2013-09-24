@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A775D107-B887-40D8-889E-30003CD369CF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IPAInspectTool</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89A75978-6B80-46ED-BAE1-694737B8667A</key>
+		<string>https://github.com/wpsteak/IPAInspectTool.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IPAInspectTool.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89A75978-6B80-46ED-BAE1-694737B8667A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wpsteak/IPAInspectTool.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89A75978-6B80-46ED-BAE1-694737B8667A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89A75978-6B80-46ED-BAE1-694737B8667A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IPAInspectTool</string>
+		</dict>
+	</array>
+</dict>
+</plist>
